@@ -1,0 +1,545 @@
+body {
+    background-color: #121212;
+    /* Dark background */
+    color: #ffffff;
+    /* Light text color */
+}
+
+.navbar {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    /* Shadow effect for depth */
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #39FF14;
+    /* Neon Green for brand */
+    transition: color 0.3s;
+}
+
+.navbar-brand:hover {
+    color: #4e9cef;
+    /* Electric Blue on hover */
+}
+
+.nav-link {
+    color: #ffffff;
+    /* Light text color for links */
+    font-size: 1.1rem;
+    transition: color 0.3s;
+}
+
+.nav-link:hover {
+    color: #39FF14;
+    /* Neon Green on hover */
+}
+
+.navbar-toggler {
+    border-color: #39FF14;
+    /* Neon Green border for toggler */
+}
+
+.navbar-toggler-icon {
+    background-image: transparent;
+    /* Remove default icon */
+}
+
+.navbar-toggler::after {
+    /* content: '\\f0c9'; FontAwesome bars */
+    font-family: 'Font Awesome 5 Free';
+    /* Using Font Awesome for icons */
+    font-weight: 900;
+    /* Solid style */
+    color: #39FF14;
+    /* Neon Green */
+    font-size: 1.5rem;
+    /* Size of the icon */
+}
+
+.hero {
+    background-color: #1a1a2e;
+    /* Dark background for the hero section */
+    background-image: url('images/hero-background.jpg');
+    /* Replace with your image path */
+    background-size: cover;
+    /* Ensures the image covers the section */
+    background-position: center;
+    /* Center the image */
+    color: #ffffff;
+    /* Light text color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /* Full viewport height */
+    text-align: center;
+    position: relative;
+    /* For positioning pseudo-elements */
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    /* Dark overlay for contrast */
+    z-index: 1;
+    /* Ensure it stays behind text */
+}
+
+.hero-content {
+    position: relative;
+    /* Positioning for the content */
+    z-index: 2;
+    /* Ensure text is above overlay */
+}
+
+.hero h1 {
+    font-size: 3rem;
+    /* Large headline */
+    margin-bottom: 20px;
+    color: #edf0ec;
+    /* Light color for the headline */
+    text-shadow: 0 0 10px #f9fcf9,
+        /* Neon Green glow */
+        0 0 20px #1499ff,
+        /* Stronger glow */
+        0 0 30px #eff0ef;
+    /* Even stronger glow */
+}
+
+.hero p {
+    font-size: 1.2rem;
+    /* Subheadline size */
+    margin-bottom: 30px;
+}
+
+.btn {
+    background-color: #4e9cef;
+    /* Electric Blue for button */
+    border: none;
+    color: #ffffff;
+    /* White text for button */
+    padding: 10px 20px;
+    /* Button padding */
+    border-radius: 5px;
+    /* Rounded corners */
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #39FF14;
+    /* Neon Green on hover */
+}
+
+.about {
+    background-color: #1a1a2e;
+    /* Dark background for the About section */
+    color: #ffffff;
+    /* Light text color */
+    padding: 50px 20px;
+    /* Padding for spacing */
+    text-align: center;
+    /* Center text */
+}
+
+.about-container {
+    display: flex;
+    /* Flexbox layout for image and content */
+    flex-direction: column;
+    /* Column layout for smaller screens */
+    align-items: center;
+    /* Center items */
+    max-width: 1200px;
+    /* Max width for the container */
+    margin: auto;
+    /* Center the container */
+}
+
+.about-image img {
+    width: 100%;
+    /* Responsive image */
+    max-width: 300px;
+    /* Max width for the image */
+    border-radius: 10px;
+    /* Rounded corners for the image */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5), 0 0 20px #39FF14;
+    /* Shadow and glowing border */
+    transition: transform 0.3s;
+    /* Smooth transformation */
+}
+
+.about-image img:hover {
+    transform: scale(1.05);
+    /* Scale effect on hover */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5), 0 0 30px #39FF14;
+    /* Glowing border on hover */
+}
+
+.about h2 {
+    font-size: 2.5rem;
+    /* Large heading */
+    margin-bottom: 20px;
+    /* Spacing below the heading */
+    color: #39FF14;
+    /* Neon Green for the heading */
+    text-shadow: 0 0 10px #39FF14;
+    /* Glow effect */
+}
+
+.about p {
+    font-size: 1.1rem;
+    /* Standard paragraph size */
+    line-height: 1.6;
+    /* Improved line height for readability */
+    margin-bottom: 20px;
+    /* Spacing below paragraphs */
+    color: #edf0ec;
+    /* Light color for text */
+}
+
+.btn {
+    background-color: #4e9cef;
+    /* Electric Blue for button */
+    border: none;
+    color: #ffffff;
+    /* White text for button */
+    padding: 10px 20px;
+    /* Button padding */
+    border-radius: 5px;
+    /* Rounded corners */
+    font-size: 1rem;
+    text-decoration: none;
+    /* Remove underline */
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #39FF14;
+    /* Neon Green on hover */
+}
+
+.projects {
+    background-color: #1a1a2e;
+    /* Dark background for the Projects section */
+    color: #ffffff;
+    /* Light text color */
+    padding: 50px 20px;
+    /* Padding for spacing */
+    text-align: center;
+    /* Center text */
+}
+
+.projects h2 {
+    font-size: 2.5rem;
+    /* Large heading */
+    margin-bottom: 30px;
+    /* Spacing below the heading */
+    color: #39FF14;
+    /* Neon Green for the heading */
+    text-shadow: 0 0 10px #39FF14;
+    /* Glow effect */
+}
+
+.projects-container {
+    display: grid;
+    /* Grid layout for project cards */
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    /* Responsive grid */
+    gap: 20px;
+    /* Spacing between cards */
+    max-width: 1200px;
+    /* Max width for the container */
+    margin: auto;
+    /* Center the container */
+}
+
+.project-card {
+    background-color: #0f0c29;
+    /* Darker card background */
+    border-radius: 10px;
+    /* Rounded corners */
+    overflow: hidden;
+    /* Clip the overflow */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    /* Shadow for depth */
+    transition: transform 0.3s;
+    /* Smooth transformation */
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    /* Lift effect on hover */
+}
+
+.project-card img {
+    width: 100%;
+    /* Responsive image */
+    height: auto;
+    /* Maintain aspect ratio */
+}
+
+.project-info {
+    padding: 20px;
+    /* Padding inside the card */
+}
+
+.project-info h3 {
+    font-size: 1.5rem;
+    /* Title size */
+    color: #39FF14;
+    /* Neon Green for the project title */
+    margin-bottom: 10px;
+    /* Spacing below the title */
+}
+
+.project-info p {
+    font-size: 1rem;
+    /* Standard paragraph size */
+    margin-bottom: 15px;
+    /* Spacing below paragraph */
+    color: #edf0ec;
+    /* Light color for text */
+}
+
+.skills {
+    background-color: #1a1a2e;
+    /* Dark background */
+    color: #ffffff;
+    /* Light text color */
+    padding: 50px 20px;
+    /* Spacing */
+    text-align: center;
+    /* Center heading */
+}
+
+.skills h2 {
+    font-size: 2.5rem;
+    /* Large heading */
+    margin-bottom: 30px;
+    /* Space below heading */
+    color: #39FF14;
+    /* Neon green for heading */
+    text-shadow: 0 0 10px #39FF14;
+    /* Glow effect for heading */
+}
+
+.skills-container {
+    max-width: 800px;
+    /* Limit width */
+    margin: auto;
+    /* Center the container */
+}
+
+.skill {
+    margin-bottom: 20px;
+    /* Space between skills */
+}
+
+.skill h3 {
+    font-size: 1.2rem;
+    /* Skill name font size */
+    margin-bottom: 5px;
+    /* Space below skill name */
+    color: #edf0ec;
+    /* Light color for skill names */
+}
+
+.progress {
+    background-color: #333;
+    /* Dark background for progress bar */
+    border-radius: 20px;
+    /* Rounded corners */
+    overflow: hidden;
+    /* Clip progress bar */
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+    /* Inner shadow for depth */
+}
+
+.progress-bar {
+    background-color: #4e9cef;
+    /* Electric blue for progress bar */
+    height: 15px;
+    /* Height of progress bar */
+    border-radius: 20px;
+    /* Rounded corners */
+    text-align: right;
+    /* Align percentage to the right */
+    padding-right: 10px;
+    /* Padding for percentage text */
+    color: #ffffff;
+    /* White text for percentage */
+    font-weight: bold;
+    /* Bold percentage text */
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 0 10px #4e9cef;
+    /* Neon glow around bar */
+    transition: width 0.5s ease-in-out;
+    /* Smooth animation */
+}
+
+.progress-bar::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.2);
+    /* Subtle glow effect */
+    animation: glow 2s infinite alternate;
+    /* Pulsating effect */
+}
+
+@keyframes glow {
+    from {
+        opacity: 0.5;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.contact-button-container {
+    text-align: center;
+    /* Center the button */
+    margin-top: 30px;
+    /* Add space above the button */
+    margin-bottom: 30px;
+    /* Add space below the button */
+}
+
+.contact-me-btn {
+    background-color: #4e9cef;
+    /* Electric blue */
+    border: none;
+    color: #ffffff;
+    /* White text */
+    padding: 12px 20px;
+    /* Button padding */
+    border-radius: 5px;
+    /* Rounded corners */
+    font-size: 1rem;
+    /* Font size */
+    font-weight: bold;
+    /* Bold text */
+    text-decoration: none;
+    /* Remove underline */
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    /* Smooth transitions */
+}
+
+.contact-me-btn:hover {
+    background-color: #39FF14;
+    /* Neon green on hover */
+    box-shadow: 0 0 10px #39FF14, 0 0 20px #39FF14;
+    /* Glow on hover */
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #1a1a2e;
+    /* Dark background */
+    color: #ffffff;
+    /* Light text color */
+    padding: 20px 0;
+    /* Padding for top and bottom */
+    text-align: center;
+    /* Center text and content */
+    border-top: 1px solid #333;
+    /* Border on top for separation */
+}
+
+.footer-content p {
+    margin: 0;
+    /* Remove default margin */
+    font-size: 0.9rem;
+    /* Smaller text for copyright */
+    color: #888888;
+    /* Muted color */
+}
+
+.social-icons {
+    margin: 15px 0;
+    /* Space around icons */
+}
+
+.social-icon {
+    margin: 0 10px;
+    /* Space between icons */
+    color: #39FF14;
+    /* Neon green */
+    font-size: 1.5rem;
+    /* Increase icon size */
+    transition: color 0.3s, text-shadow 0.3s;
+    /* Smooth transition */
+}
+
+.social-icon:hover {
+    color: #4e9cef;
+    /* Electric blue on hover */
+    text-shadow: 0 0 10px #4e9cef;
+    /* Neon glow on hover */
+}
+
+.footer-links {
+    margin-top: 10px;
+    /* Space above links */
+}
+
+.footer-links a {
+    color: #ffffff;
+    /* Light color for links */
+    margin: 0 5px;
+    /* Space between links */
+    text-decoration: none;
+    /* Remove underline */
+    font-size: 0.9rem;
+    /* Small font for links */
+    transition: color 0.3s;
+    /* Smooth transition */
+}
+
+.footer-links a:hover {
+    color: #39FF14;
+    /* Neon green on hover */
+}
+/* Loading Screen Styles */
+.loading-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(18, 18, 18, 0.9); /* Dark background */
+    color: #39FF14; /* Neon Green text */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999; /* High z-index to cover other elements */
+    opacity: 1; /* Start visible */
+    transition: opacity 0.5s; /* Smooth transition */
+}
+
+.spinner {
+    border: 8px solid rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    border-top: 8px solid #39FF14; /* Neon Green for spinner */
+    width: 50px;
+    height: 50px;
+    animation: spin 1s linear infinite; /* Spinner animation */
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}

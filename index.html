@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css"> <!-- Custom CSS for theme -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha384-DyZvJt9Er57z0jHMLw0j56e2Q0sdNx4S0+66auNnDp06p8paAABDh0v8k0c3V/v" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <div id="loading-screen" class="loading-screen">
+        <div class="spinner"></div>
+        <p>Loading...</p>
+    </div>    
+
+    <!-- Navbar Section -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">MyPortfolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-content" id="home">
+            <h1>Welcome to My Portfolio</h1>
+            <p>Showcasing my work and skills in web development.</p>
+            <a href="#projects" class="btn btn-light">View Projects</a>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="about-container">
+            <div class="about-image">
+                <img src="images/Profile Picture.avif" alt="About Me"> <!-- Replace with your image path -->
+            </div>
+            <div class="about-content">
+                <h2>About Me</h2>
+                <p>
+                    I am a passionate web developer with experience in creating dynamic and responsive websites.
+                    My goal is to build user-friendly applications that provide seamless experiences.
+                </p>
+                <p>
+                    I enjoy learning new technologies and continuously improving my skills to keep up with the
+                    fast-paced world of web development.
+                </p>
+                <a href="images/resume.pdf" class="btn" download>Download Resume</a>
+                <!-- Replace with your resume path -->
+            </div>
+            <!-- Add this button in your main page's section where you want to link to the contact page -->
+            <div class="contact-button-container">
+                <a href="contact.html" class="contact-me-btn">Contact Me</a>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="projects" class="projects">
+        <h2>My Projects</h2>
+        <div class="projects-container">
+            <div class="project-card">
+                <img src="images/project1.jpg.png" alt="Project 1"> <!-- Replace with your image path -->
+                <div class="project-info">
+                    <h3>Juicy - Fresh Juices Website</h3>
+                    <p>
+                        The Juicy website highlights a fresh juice brand with a responsive design, menu, testimonials,
+                        and blog.</p>
+                    <a href="https://darshanmodi9662.github.io/Juicy---Fresh-Juices-Website/" class="btn"
+                        target="_blank">View Project</a> <!-- Replace with your project link -->
+                </div>
+            </div>
+            <div class="project-card">
+                <img src="images/project2.jpg.png" alt="Project 2"> <!-- Replace with your image path -->
+                <div class="project-info">
+                    <h3>Timeless Watches E-Commerce Website</h3>
+                    <p>The Timeless Watches website provides an elegant, responsive platform for luxury watch sales and
+                        e-commerce.</p>
+                    <a href="https://darshanmodi9662.github.io/Timeless-Watches-E-Commerce-Website/" class="btn"
+                        target="_blank">View Project</a> <!-- Replace with your project link -->
+                </div>
+            </div>
+            <div class="project-card">
+                <img src="images/project3.jpg.png" alt="Project 3"> <!-- Replace with your image path -->
+                <div class="project-info">
+                    <h3>Desi Flavor's Vendor Website</h3>
+                    <p>The Desi Flavors website showcases Indian street food with engaging visuals and a responsive,
+                        interactive design.</p>
+                    <a href="https://darshanmodi9662.github.io/Desi-Flavors-Website/" class="btn" target="_blank">View
+                        Project</a> <!-- Replace with your project link -->
+                </div>
+            </div>
+            <div class="project-card">
+                <img src="images/project4.jpg.png" alt="Project 3"> <!-- Replace with your image path -->
+                <div class="project-info">
+                    <h3>Step-Style-Website</h3>
+                    <p>Step Style Website offers diverse footwear, featuring a user-friendly interface and efficient
+                        cart functionality for seamless shopping.</p>
+                    <a href="https://darshanmodi9662.github.io/Step-Style-Website/" class="btn" target="_blank">View
+                        Project</a> <!-- Replace with your project link -->
+                </div>
+                <!-- Add more project cards as needed -->
+            </div>
+    </section>
+
+    <section id="skills" class="skills">
+        <h2>My Skills</h2>
+        <div class="skills-container">
+            <div class="skill">
+                <h3>HTML</h3>
+                <div class="progress">
+                    <div class="progress-bar" style="width: 90%">90%</div>
+                </div>
+            </div>
+            <div class="skill">
+                <h3>CSS</h3>
+                <div class="progress">
+                    <div class="progress-bar" style="width: 80%">80%</div>
+                </div>
+            </div>
+            <div class="skill">
+                <h3>JavaScript</h3>
+                <div class="progress">
+                    <div class="progress-bar" style="width: 70%">70%</div>
+                </div>
+            </div>
+            <div class="skill">
+                <h3>React</h3>
+                <div class="progress">
+                    <div class="progress-bar" style="width: 65%">65%</div>
+                </div>
+            </div>
+            <div class="skill">
+                <h3>Bootstrap</h3>
+                <div class="progress">
+                    <div class="progress-bar" style="width: 75%">75%</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    
+    <script>
+        // Function to hide the loading screen
+        function hideLoadingScreen() {
+            const loadingScreen = document.getElementById('loading-screen');
+            loadingScreen.style.opacity = '0'; // Fade out
+            setTimeout(() => {
+                loadingScreen.style.display = 'none'; // Remove from view
+            }, 500); // Match the duration of the opacity transition
+        }
+    
+        // Hide loading screen after the page has fully loaded
+        window.onload = hideLoadingScreen;
+    </script>    
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer-content" id="contact">
+            <p>&copy; 2024 Modi_Darshan. All rights reserved.</p>
+            <div class="social-icons">
+                <a href="https://github.com/darshanmodi9662" target="_blank" class="social-icon">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://youtube.com/@voidmd1512?si=HMOMiB1dY6zvk6NK" target="_blank" class="social-icon">
+                    <i class="fab fa-youtube"></i>
+                </a>
+            </div>
+            <div class="footer-links">
+                <a href="#home">Home</a> |
+                <a href="contact.html">Contact</a> |
+                <a href="#projects">Projects</a>
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>
